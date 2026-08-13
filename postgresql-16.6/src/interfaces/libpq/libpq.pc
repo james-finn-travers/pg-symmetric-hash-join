@@ -1,0 +1,14 @@
+prefix=/home/james/csi3130_project-1/.pg16-install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpq
+Description: PostgreSQL libpq library
+URL: https://www.postgresql.org/
+Version: 16.6
+Requires: 
+Requires.private: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpq
+Libs.private:  -lpgcommon -lpgport -lm
